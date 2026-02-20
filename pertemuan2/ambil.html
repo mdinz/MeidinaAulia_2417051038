@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil</title>
+</head>
+<body>
+    <h2>Data diterima</h2>
+
+    <p id="hasil"></p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const nama = params.get("nama");
+        document.getElementById("hasil").textContent = "Nama: " + nama;
+    </script>
+</body>
+</html>
